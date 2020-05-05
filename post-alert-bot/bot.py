@@ -38,7 +38,7 @@ async def on_ready():
                     cur.execute("INSERT INTO redditpostalerts (post_id) VALUES ('" + p.id + "');")
                     # In order to make the changes to the database permanent, we now commit our changes
                     conn.commit()
-                    await channel.send("[" + sub + "] " + p.title + "\n" + p.url)
+                    await channel.send("[" + sub + "] " + p.title + "\n" + p.url + "@Turnip Alerts")
                 #await channel.send(p.url)
         # We have committed the necessary changes and can now close out our connection
         cur.close()
