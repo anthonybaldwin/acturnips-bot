@@ -1,1 +1,1 @@
-worker: python post-alert-bot/bot.py 
+worker: python post-alert-bot/bot.py

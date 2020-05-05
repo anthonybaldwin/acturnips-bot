@@ -22,11 +22,11 @@ def ScrapePosts(sub, keywords):
         # checks for any new post
         for submission in subreddit.new(limit=10):
                 for keyword in keywords:
-                    if submission.title.lower().find(keyword) != -1: 
+                    if submission.title.lower().find(keyword) != -1:
                         posts.append(submission)
                         print("Match for" + keyword + ": " + submission.title)
                         break
-        time.sleep(2)            
-    except Exception: 
+        time.sleep(2)
+    except Exception:
         time.sleep(10)
     return posts
