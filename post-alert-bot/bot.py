@@ -43,6 +43,6 @@ async def on_ready():
         # We have committed the necessary changes and can now close out our connection
         cur.close()
         conn.close()
-        await asyncio.sleep(60)
+        await asyncio.sleep(35)
 
 client.run(token)
