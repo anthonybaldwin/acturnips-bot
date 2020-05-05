@@ -45,5 +45,4 @@ async def on_ready():
         conn.close()
         await asyncio.sleep(60)
 
-
 client.run(token)
