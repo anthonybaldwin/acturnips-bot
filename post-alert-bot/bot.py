@@ -9,7 +9,7 @@ import RedditScrape as rs
 import psycopg2
 
 subs = ['acturnips']
-keywords = ['buy', 'sell', 'for']
+keywords = ['buy', 'sell', 'for', 'nook', 'turn', 'nmt', 'tim', 'tom', 'twin']
 channelid = 707097847530782721
 
 token = os.environ['DISCORDBOT_TOKEN']
