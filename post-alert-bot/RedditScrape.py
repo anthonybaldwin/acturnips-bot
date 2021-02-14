@@ -15,7 +15,7 @@ def ScrapePosts(sub, keywords):
         client_secret = os.environ['BOTONE_SECRET']
         user_agent = os.environ['BOTONE_AGENT']
 
-        reddit = praw.Reddit(client_id=client_id, client_secret=client_secret, password=password, username=username, user_agent=user_agent)
+        reddit = praw.Reddit(client_id=client_id, client_secret=client_secret, password=password, username=username, user_agent=user_agent, check_for_async=False)
 
         subreddit = reddit.subreddit(sub)
 
