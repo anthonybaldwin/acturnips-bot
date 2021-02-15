@@ -11,6 +11,7 @@ import psycopg2
 subs = ['acturnips']
 keywords = ['buy', 'sell', 'for', 'nook', 'turn', 'nmt', 'tim', 'tom', 'twin', 'SW']
 channelid = 707097847530782721
+roleid = 707108605551312936
 
 token = os.environ['DISCORDBOT_TOKEN']
 DATABASE_URL = os.environ['DATABASE_URL']
@@ -38,7 +39,7 @@ async def on_ready():
                     cur.execute("INSERT INTO redditpostalerts (post_id) VALUES ('" + p.id + "');")
                     # In order to make the changes to the database permanent, we now commit our changes
                     conn.commit()
-                    await channel.send("<@&707097847530782721> " + p.title + "\n" + p.url)
+                    await channel.send("<@&" + roleid + "> " + p.title + "\n" + p.url)
                 #await channel.send(p.url)
         # We have committed the necessary changes and can now close out our connection
         cur.close()
