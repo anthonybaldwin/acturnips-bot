@@ -1,6 +1,6 @@
 aiohttp==3.7.4.post0
 alabaster==0.7.12
-discord==1.7.3
+discord==2.2.2
 discord.py==1.7.3
 praw==7.6.0
 prawcore==2.3.0
